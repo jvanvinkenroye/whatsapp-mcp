@@ -1,0 +1,17 @@
+# Binary
+whatsapp-bridge
+
+# Data
+store/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# IDE
+.claude/
+
+# OS
+.DS_Store
