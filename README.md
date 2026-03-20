@@ -2,9 +2,6 @@
 
 A Model Context Protocol (MCP) server for WhatsApp that lets you search and read messages (including images, videos, documents, and audio), search contacts, and send messages or media to individuals or groups.
 
-It connects directly to your **personal WhatsApp account** via the WhatsApp Web multidevice API (using the [whatsmeow](https://github.com/tulir/whatsmeow) library). All messages are stored locally in a SQLite database and only sent to an LLM when explicitly accessed through MCP tools.
-
-![WhatsApp MCP](./example-use.png)
 
 > *Caution:* as with many MCP servers, the WhatsApp MCP is subject to [the lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/). Prompt injection could lead to private data exfiltration.
 
