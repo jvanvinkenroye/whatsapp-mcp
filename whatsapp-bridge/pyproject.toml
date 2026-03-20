@@ -1,10 +1,20 @@
 [project]
 name = "wa-cli"
 version = "0.1.0"
-description = "Add your description here"
+description = "WhatsApp CLI tool - send messages via whatsapp-bridge"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "requests>=2.32.5",
     "rich>=14.3.1",
 ]
+
+[project.scripts]
+wa = "wa_cli.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wa_cli"]
